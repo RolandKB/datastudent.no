@@ -10,7 +10,6 @@
     />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-100 text-gray-800 font-sans scroll-smooth">
     <nav class="bg-white shadow-md">
@@ -56,7 +55,6 @@
     <div class="max-w-3xl mx-auto px-6 md:px-10 py-6">
       <header
         class="flex flex-col md:flex-row items-center md:items-start gap-6 mb-8"
-        data-aos="fade-down"
       >
         <div id="kontakt">
           <h1 class="text-4xl font-bold text-blue-700">Roland Berge</h1>
@@ -86,7 +84,7 @@
         </div>
       </header>
 
-      <section id="om" class="mb-6" data-aos="fade-up">
+      <section id="om" class="mb-6">
         <h2 class="text-2xl font-semibold text-gray-800 mb-2">Om meg</h2>
         <p>
           Jeg studerer bachelor i datateknologi og er interessert i
@@ -95,12 +93,7 @@
         </p>
       </section>
 
-      <section
-        id="prosjekter"
-        class="mb-6"
-        data-aos="fade-up"
-        data-aos-delay="100"
-      >
+      <section id="prosjekter" class="mb-6">
         <h2 class="text-2xl font-semibold text-gray-800 mb-2">Prosjekter</h2>
         <ul class="list-disc list-inside space-y-1">
           <li>
@@ -121,16 +114,10 @@
         <em>(Flere prosjekter kommer snart)</em>
       </section>
 
-      <section
-        id="ferdigheter"
-        class="mb-6"
-        data-aos="fade-up"
-        data-aos-delay="200"
-      >
+      <section id="ferdigheter" class="mb-6">
         <h2 class="text-2xl font-semibold text-gray-800 mb-2">Ferdigheter</h2>
         <ul class="grid grid-cols-2 gap-2 list-disc list-inside">
           <li>Python</li>
-          <li>Java</li>
           <li>JavaScript</li>
           <li>Git & GitHub</li>
           <li>HTML/CSS</li>
@@ -138,11 +125,7 @@
         </ul>
       </section>
 
-      <footer
-        class="text-sm text-gray-500 mt-12 border-t pt-4"
-        data-aos="fade-in"
-        data-aos-delay="300"
-      >
+      <footer class="text-sm text-gray-500 mt-12 border-t pt-4">
         © 2025 Roland Berge –
         <a href="https://datastudent.no" class="hover:underline"
           >datastudent.no</a
@@ -150,12 +133,8 @@
       </footer>
     </div>
 
-    <!-- AOS + Burger Script -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- Burger Script -->
     <script>
-      AOS.init({ duration: 800, easing: "ease-in-out", once: true });
-
-      // Burger toggle
       const toggleBtn = document.getElementById("menu-toggle");
       const navMobile = document.getElementById("nav-mobile");
       toggleBtn.addEventListener("click", () => {
